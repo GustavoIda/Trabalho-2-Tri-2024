@@ -1,18 +1,21 @@
 :root {
-    --cor-fundo: #E8F5E9; /* Verde claro */
+    --cor-fundo: #000000; /* Preto */
     --cor-principal: #4CAF50; /* Verde escuro */
     --cor-secundaria: #9C27B0; /* Roxo */
     --cor-destaque: #D32F2F; /* Vermelho */
-    --cor-texto: #212121;
+    --cor-texto: #E0E0E0; /* Cinza claro */
+    --cor-degrade-inicial: #000000; /* Preto para o início do degradê */
+    --cor-degrade-final: #4CAF50; /* Verde escuro para o final do degradê */
 }
 
 body {
-    background-color: var(--cor-fundo);
+    background: linear-gradient(180deg, var(--cor-degrade-inicial), var(--cor-degrade-final)); /* Fundo degradê */
     color: var(--cor-texto);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: 'Roboto', sans-serif; /* Aplicar a fonte Roboto */
 }
 
 .caixa-principal {
@@ -26,6 +29,7 @@ body {
 
 h1 {
     color: var(--cor-secundaria);
+    font-weight: 700; /* Fonte em negrito para o título */
 }
 
 button {
@@ -35,10 +39,17 @@ button {
     border-radius: 15px;
     padding: 15px;
     margin: 10px;
+    font-family: 'Roboto', sans-serif; /* Aplicar a fonte Roboto */
+    font-weight: 400; /* Fonte regular para os botões */
     transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
+}
+
+.caixa-perguntas, .caixa-alternativas, .caixa-resultado {
+    font-family: 'Roboto', sans-serif; /* Aplicar a fonte Roboto */
+    font-weight: 400; /* Fonte regular para o texto */
 }
