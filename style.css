@@ -5,7 +5,7 @@
     --cor-destaque: #D32F2F; /* Vermelho */
     --cor-texto: #E0E0E0; /* Cinza claro */
     --cor-degrade-inicial: #000000; /* Preto para o início do degradê */
-    --cor-degrade-final: #1f6121; /* Verde escuro para o final do degradê */
+    --cor-degrade-final: #0c5568; /* Verde escuro para o final do degradê */
 }
 
 body {
